@@ -16,6 +16,7 @@ import { RegisterComponent } from './register/register.component';
 import { HospitalesComponent } from './hospitales/hospitales.component';
 import { MedicosComponent } from './medicos/medicos.component';
 import { ModalMComponent } from './modal-m/modal-m.component';
+import { PacienteListaComponent } from './paciente-lista/paciente-lista.component';
 
 
 
@@ -30,6 +31,7 @@ import { ModalMComponent } from './modal-m/modal-m.component';
     HospitalesComponent,
     MedicosComponent,
     ModalMComponent,
+    PacienteListaComponent,
     
   ],
   imports: [

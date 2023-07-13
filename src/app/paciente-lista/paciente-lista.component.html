@@ -1,0 +1,38 @@
+<!-- usamos la metodologia bem para usar scss -->
+<div class="containerPaciente">
+    <div class="containerPaciente__sub">
+        <div class="containerPaciente__sub--title">
+            <h1>Pacientes</h1>
+            <button (click)="openCreateModal()">Crear</button>
+        </div>
+        <div class="containerPaciente__sub--table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Direccion</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        <th>Telefono</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let paciente of pacientes">
+                        <td><b>{{ paciente.nombre }}</b></td>
+                        <td>{{ paciente.direccion }}</td>
+                        <td>{{ paciente.ciudad }}</td>
+                        <td>{{ paciente.pais }}</td>
+                        <td>{{ paciente.telefono }}</td>
+                        <td>{{ paciente.fecha_nacimiento }}</td>
+                        <td>
+                            <button (click)="openEditModal(paciente)">Edit</button>
+                            <button (click)="deletePaciente(paciente)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
