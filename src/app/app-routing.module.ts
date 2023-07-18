@@ -7,13 +7,15 @@ import { HospitalesComponent } from './hospitales/hospitales.component';
 import { MedicosComponent } from './medicos/medicos.component';
 import { PacienteListaComponent } from './paciente-lista/paciente-lista.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  {path: 'login', component: LoginComponent, pathMatch: 'full'},
-  {path: 'register', component: RegisterComponent, pathMatch: 'full'},
-  {path: 'hospitales', component: HospitalesComponent, pathMatch: 'full'},
-  {path: 'medicos', component: MedicosComponent, pathMatch: 'full'},
-  {path: 'pacientes', component: PacienteListaComponent, pathMatch: 'full'},
+  { path: 'register', component: RegisterComponent, pathMatch: 'full'},
+  { path: 'login', component: LoginComponent, pathMatch: 'full'},
+  { path: 'register', component: RegisterComponent, pathMatch: 'full'},
+  { path: 'hospitales', component: HospitalesComponent, pathMatch: 'full'},
+  { path: 'medicos', component: MedicosComponent, pathMatch: 'full'},
+  { path: 'pacientes', component: PacienteListaComponent, pathMatch: 'full'},
   { path: 'personalista', component: PersonaListaComponent }
 ];
 
